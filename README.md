@@ -1,5 +1,6 @@
 # MPFDA-bespinosa
-Author: **Brian Espinosa Acosta**
+Author: **Brian Espinosa Acosta**  
+email: bespinosaaco@mun.ca
 --
 Github Repository for the Microcredential in Practical Foundations for Data Analytics course.
 
