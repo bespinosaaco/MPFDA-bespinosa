@@ -1,0 +1,20 @@
+For this final submission, complete Part 6 of the project, and modify part of your work for an HPC submission. You will need to submit your completed notebook, a copy of your job script, and the modified .py file. 
+
+On GitHub, add a ReadMe that provides a brief description of how your habit tracker works, and instructions on how to use the tracker for a new user. 
+
+Continue working on your previously-downloaded Jupyter notebook. Just in case, you can find a fresh copy here: Link Here
+
+HPC Submission Instructions
+For the HPC portion of the project, you will adapt your function to generate weekly reports for multiple data sets. The python script template with commented instructions, as well as the data files to use, can be found here: Link here
+
+Rename the template .py file to include your first initial and last name.
+
+Move your completed Python script and the data files to the training cluster, and create a job script to submit it. This job script should run Project-HPC.py. Ensure appropriate modules are loaded, and use a virtual Python environment to install asteval (to use the asteval library) in your job.
+
+As a reminder, the cluster hostname is micro.ace-net.ca. If you have trouble accessing your cluster account, email Sarah at sarah.clarke@ace-net.ca. 
+
+Determine the appropriate amount of resources to request by submitting a job and checking the usage with seff. Update your job script accordingly.
+
+Note: This should NOT exceed 4 CPUs with 4 GB each, for more than 3 hours.
+
+Ensure that you submit all required files, detailed above!
