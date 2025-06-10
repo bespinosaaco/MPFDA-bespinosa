@@ -8,5 +8,6 @@ Github Repository for the Microcredential in Practical Foundations for Data Anal
 ```text
 \project
     -bespinosa_acosta.ipynb # Habits Tracker
+    -bespinosa_acosta_cleared.ipynb # Same but without instructions
 ```
 
