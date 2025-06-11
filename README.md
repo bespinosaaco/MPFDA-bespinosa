@@ -2,12 +2,15 @@
 Author: **Brian Espinosa Acosta**  
 email: bespinosaaco@mun.ca
 --
-Github Repository for the Microcredential in Practical Foundations for Data Analytics course.
+Github Repository for the Microcredential in Practical Foundations for Data Analytics course.  
+GitHub Link: https://github.com/bespinosaaco/MPFDA-bespinosa
 
 ## Directory structure
 ```text
 \project_HPC
     -bespinosa_acosta.py # Python Script for weekly report using HPC
+    -bespinosa_acosta.sh
+    -requirements.txt 
     -Assigment3_Instructions.txt
     -dictionaries.txt
     -...
@@ -43,5 +46,50 @@ Weekly Habit Tracker Menu:
 10. Print all habits
 11. Exit
 12. Print Menu
+```
+
+## How to run the HPC job
+
+1. Log in to the remote server
+```bash
+ssh <user>@mokey.micro.ace-net.training # User given by Acenet
+```
+```bash
+ssh bespinosaaco@mokey.micro.ace-net.training 
+```
+
+2. Copy project folder from local to remote
+```bash
+scp -r path/to/local/folder <user>@mokey.micro.ace-net.training:path/to/remote/
+```
+Use the `pwd` command to find the working directory path
+
+3. Create the `job.sh`
+
+4. Ensure that in the working directory this list of files exist
+- bespinosa_acosta.py
+- bespinosa_acosta.sh
+- requirements.txt
+- dictionaries_1.txt
+- ...
+
+5. Run the job `bespinosa_acosta.sh`
+
+```bash
+sbatch bespinosa_acosta.sh
+```
+
+6. Double-Check the results `cat bespinosa_acosta.out`
+
+#### Troubleshooting
+
+- Run `squeue -u bespinosaaco` to check status
+- Check efficiency `seff <ID>`
+- Cancel a job
+```bash
+scancel <ID>
+scancel <ID> <ID2> <ID3>
+scancel -u user1
+scancel -u user1 -t PENDING
 ```
 
