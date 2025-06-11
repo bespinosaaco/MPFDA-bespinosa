@@ -63,6 +63,7 @@ ssh bespinosaaco@mokey.micro.ace-net.training
 scp -r path/to/local/folder <user>@mokey.micro.ace-net.training:path/to/remote/
 ```
 Use the `pwd` command to find the working directory path
+**Note** the parent directory for my project_HPC folder on the server will be assignment3
 
 3. Create the `job.sh`
 
