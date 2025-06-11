@@ -39,7 +39,8 @@ def report_week(habits_dict, task_dict, name):
                 status_str = "Completed"
             else:
                 status_str = "Not Completed"
-        print(f"{habit} completed {count_completed_habits} times this week.")
+        print(f"\t- {habit} completed {count_completed_habits} times this week.")
+        count_completed_habits = 0
     print("--------------------")
     print("Tasks Summary:\n")
     completed_tasks = []               # Remade this to comply with the indications but the print_tasks function already does this
